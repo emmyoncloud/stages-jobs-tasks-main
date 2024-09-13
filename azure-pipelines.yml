@@ -52,8 +52,8 @@ stages:
 
   - job: DeployBackendProd
     displayName: Deploy backend to PROD
-    pool:
-      vmImage: 'ubuntu-20.04'
+    # pool:
+    #   vmImage: 'ubuntu-20.04'
     steps:
     - script: echo deploying backend app to PROD
       displayName: deploy backend app to PROD
