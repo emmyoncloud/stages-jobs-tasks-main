@@ -42,7 +42,7 @@ stages:
 - stage: DeployProd
   displayName: Deploy to PROD environment
   pool:
-    vmImage: 'macOS-10.14'
+    vmImage: 'ubuntu-20.04'
   jobs:
   - job: DeployFrontendProd
     displayName: Deploy frontend to PROD
@@ -53,7 +53,7 @@ stages:
   - job: DeployBackendProd
     displayName: Deploy backend to PROD
     pool:
-      vmImage: 'vs2017-win2016'
+      vmImage: 'ubuntu-20.04'
     steps:
     - script: echo deploying backend app to PROD
       displayName: deploy backend app to PROD
